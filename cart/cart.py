@@ -6,11 +6,9 @@ class Cart():
 
         cart = self.session.get('session_key')
 
-        # if the user is new, no session key. create one
         if 'session_key' not in request.session:
             cart = self.session['session_key'] = {}
 
-        #let make sure the cart is available on all pages of our site
         self.cart = cart
 
 
