@@ -29,7 +29,6 @@ class Cart():
     def cart_total(self):
         # Get product IDs
         product_ids = self.cart.keys()
-        # Lookup those keys in our products database models
         products = Product.objects.filter(id__in=product_ids)
         # Get quantities
         quantities = self.cart
