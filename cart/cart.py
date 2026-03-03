@@ -29,7 +29,6 @@ class Cart():
         # Get product IDs
         product_ids = self.cart.keys()
         products = Product.objects.filter(id__in=product_ids)
-        # Get quantities
         quantities = self.cart
         # Start counting at 0
         total = 0
