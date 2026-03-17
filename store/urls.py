@@ -12,7 +12,7 @@ urlpatterns = [
    path('product/<int:pk>', views.product, name = 'product'),
    path('category/<str:king>', views.category, name = 'category'),
    path('category_summary/', views.category_summary, name = 'category_summary'),
-   
+   path('verify-otp/<int:user_id>/', views.verify_otp, name='verify_otp'),
   
 
 

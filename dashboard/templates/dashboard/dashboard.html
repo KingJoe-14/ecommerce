@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Admin Dashboard</h1>
+<div class="row">
+    <div>Total Orders: {{ total_orders }}</div>
+    <div>Pending Orders: {{ pending_orders }}</div>
+    <div>Total Products: {{ total_products }}</div>
+    <div>Total Categories: {{ total_categories }}</div>
+</div>
+{% endblock %}

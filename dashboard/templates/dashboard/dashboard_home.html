@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container mt-4">
+    <h1 class="mb-4">Admin Dashboard</h1>
+    <div class="row">
+        <!-- Total Orders -->
+        <div class="col-md-3">
+            <div class="card text-white bg-primary mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Total Orders</h5>
+                    <p class="card-text display-5">{{ total_orders }}</p>
+                </div>
+            </div>
+        </div>
+        <!-- Pending Orders -->
+        <div class="col-md-3">
+            <div class="card text-white bg-warning mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Pending Orders</h5>
+                    <p class="card-text display-5">{{ pending_orders }}</p>
+                </div>
+            </div>
+        </div>
+        <!-- Total Products -->
+        <div class="col-md-3">
+            <div class="card text-white bg-success mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Products</h5>
+                    <p class="card-text display-5">{{ total_products }}</p>
+                </div>
+            </div>
+        </div>
+        <!-- Total Categories -->
+        <div class="col-md-3">
+            <div class="card text-white bg-info mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Categories</h5>
+                    <p class="card-text display-5">{{ total_categories }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
